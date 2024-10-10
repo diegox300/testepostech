@@ -7,7 +7,7 @@
     "build": "npx tsc",
     "test": "cross-env NODE_ENV=development jest",
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon server.ts",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
     "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
     "vercel-build": "npm run build"
