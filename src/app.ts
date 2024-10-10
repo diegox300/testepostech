@@ -10,6 +10,5 @@ app.use('/', routes) // Mounting the routes at the root path
 
 // Error handling middleware
 app.use(errorMiddleware) // Using the error middleware for handling errors
-app.use(setupSwagger)
 
 export default app // Exporting the app instance for use in other modules
