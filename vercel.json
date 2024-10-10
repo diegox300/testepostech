@@ -5,11 +5,19 @@
       "src": "src/server.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**/*"]
+        "includeFiles": ["src/**/*", "src/swagger/swagger.json"]
       }
     }
   ],
   "routes": [
+    {
+      "src": "/swagger.json",
+      "dest": "src/swagger/swagger.json"
+    },
+    {
+      "src": "/api-docs",
+      "dest": "src/server.ts"
+    },
     {
       "src": "/(.*)",
       "dest": "src/server.ts"
