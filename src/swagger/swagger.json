@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "description": "API documentation for the project"
   },
-  "host": "testepostech-kf5p828dm-diego-gervasios-projects.vercel.app",
+  "host": "https://testepostech.vercel.app",
   "basePath": "/",
   "schemes": ["http"],
   "paths": {
