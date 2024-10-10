@@ -7,7 +7,7 @@
   },
   "host": "testepostech.vercel.app",
   "basePath": "/",
-  "schemes": ["https"],
+  "schemes": ["http"],
   "paths": {
     "/posts": {
       "get": {
