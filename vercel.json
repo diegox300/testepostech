@@ -3,13 +3,16 @@
   "builds": [
     {
       "src": "src/server.ts",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["src/**/*"]
+      }
     }
   ],
   "routes": [
     {
       "src": "/swagger.json",
-      "dest": "src/swagger/swagger.json"
+      "dest": "/src/swagger/swagger.json"
     },
     {
       "src": "/api-docs",
